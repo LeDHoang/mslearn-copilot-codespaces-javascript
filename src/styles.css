@@ -3,6 +3,28 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+/* Generate an amazing animation to the social icons*/
+@keyframes socialIcon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the social icons */
+.socialIcon {
+  animation: socialIcon 1.5s infinite;
+}
+
+/* Apply some global styles */
+* {
+  box-sizing: border-box;
+}
 
 html,
 body {
